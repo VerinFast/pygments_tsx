@@ -6,10 +6,15 @@ from pygments.lexers import _lexer_cache
 
 
 class TypeScriptXLexer(TypeScriptLexer):
+    def __init__(self, **options) -> None:
+        super().__init__(**options)
+        self.tokens = list(set(TOKENS + super().tokens))
+
     name = 'TypeScriptX'
     aliases = ['tsx', 'typescriptx']
     filenames = ['*.tsx']
-    tokens = TOKENS + super.tokens
+    tokens = TOKENS
+
 
 def patch_pygments():
     # Hack to register an internal lexer.
