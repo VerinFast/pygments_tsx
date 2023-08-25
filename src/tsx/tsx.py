@@ -8,7 +8,7 @@ from pygments.lexers import _lexer_cache
 class TypeScriptXLexer(TypeScriptLexer):
     def __init__(self, **options) -> None:
         super().__init__(**options)
-        self.tokens = list(set(TOKENS + super().tokens))
+        self.tokens = TOKENS | super().tokens
 
     name = 'TypeScriptX'
     aliases = ['tsx', 'typescriptx']
