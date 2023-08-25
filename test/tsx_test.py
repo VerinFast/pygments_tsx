@@ -1,6 +1,6 @@
 import pygments
 
-from pygments_tsx.pygments_tsx import TypeScriptXLexer
+from tsx.tsx import TypeScriptXLexer
 
 
 def test_lexer_on_Blank():

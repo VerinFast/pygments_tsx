@@ -52,5 +52,5 @@ path = "VERSION.py"
 files = ["requirements.txt"]
 
 [project.entry-points."pygments.lexers"]
-jsx="pygments_tsx"
-tsx="pygments_tsx"
+jsx="tsx:JsxLexer"
+tsx="tsx:TypeScriptXLexer"
