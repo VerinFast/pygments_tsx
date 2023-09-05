@@ -34,16 +34,10 @@ dynamic = ["dependencies", "version"]
 "Bug Tracker" = "https://github.com/StartupOS/pygments_tsx/issues"
 "Source" = "https://github.com/StartupOS/pygments_tsx"
 
-[project.scripts]
-verinfast = "verinfast.agent:main"
-
 [tool.pytest.ini_options]
 addopts = [
     "--import-mode=importlib",
 ]
-
-[tool.setuptools.packages.find]
-where = ["src"]
 
 [tool.hatch.version]
 path = "VERSION.py"

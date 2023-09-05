@@ -1,14 +1,16 @@
 import os
 
 import pygments
+from pygments import lexers
 from pygments.token import _TokenType
-from tsx.tsx import TypeScriptXLexer, patch_pygments
+from pygments_tsx.tsx import TypeScriptXLexer, patch_pygments
+
+parent = os.path.dirname(__file__)
+file_path = os.path.join(parent, 'Blank.tsx')
 
 
 def test_lexer_on_Blank():
     tsx_lexer = TypeScriptXLexer()
-    parent = os.path.dirname(__file__)
-    file_path = os.path.join(parent, 'Blank.tsx')
     with open(file_path) as f:
         txt = f.read()
         tokens = pygments.lex(txt, lexer=tsx_lexer)
@@ -22,4 +24,9 @@ def test_lexer_on_Blank():
 
 def test_patch_pygments():
     patch_pygments()
+    lexers.get_lexer_for_filename(file_path)
+    assert True
+
+
+def test_pygmemts():
     assert True
