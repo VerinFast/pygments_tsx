@@ -39,11 +39,11 @@ addopts = [
     "--import-mode=importlib",
 ]
 
-# [tool.hatch.version]
-# path = "VERSION.py"
+[tool.hatch.version]
+path = "VERSION.py"
 
-# [tool.hatch.metadata.hooks.requirements_txt]
-# files = ["requirements.txt"]
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
 
 # [project.entry-points."pygments.lexers"]
 # jsx="tsx:JsxLexer"
