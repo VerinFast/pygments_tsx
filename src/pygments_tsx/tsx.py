@@ -24,7 +24,7 @@ def patch_pygments():
     LEXERS['TypeScriptXLexer'] = (
         '',
         'TypeScriptXLexer',
-        ('typescriptx', 'tsx'),
+        ('typescriptx', 'pygments_tsx'),
         ('*.tsx',),
         ('application/x-typescript', 'text/x-typescript')
     )
