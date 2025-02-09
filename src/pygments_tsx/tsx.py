@@ -11,8 +11,8 @@ class TypeScriptXLexer(TypeScriptLexer):
         self.tokens = TOKENS | super().tokens
 
     name = 'TypeScriptX'
-    aliases = ['tsx', 'typescriptx']
-    filenames = ['*.tsx']
+    aliases = ['tsx', 'typescriptx', 'rsx', 'toolscript']
+    filenames = ['*.tsx', '*.rsx',]
     tokens = TOKENS
 
 

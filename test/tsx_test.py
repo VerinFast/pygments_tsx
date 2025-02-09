@@ -30,3 +30,17 @@ def test_patch_pygments():
 
 def test_pygmemts():
     assert True
+
+
+def test_lexer_on_rsx():
+    tsx_lexer = TypeScriptXLexer()
+    rsx_path = os.path.join(parent, 'Sample.rsx')
+    with open(rsx_path) as f:
+        txt = f.read()
+        tokens = list(pygments.lex(txt, lexer=tsx_lexer))
+        # Test for some RSX-specific tokens
+        container_token = next((t for t in
+                               tokens if t[1] == 'Container'), None)
+        assert container_token is not None
+        text_token = next((t for t in tokens if t[1] == 'Text'), None)
+        assert text_token is not None
