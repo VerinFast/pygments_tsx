@@ -1,8 +1,8 @@
 [![codecov](https://codecov.io/gh/StartupOS/pygments_tsx/graph/badge.svg?token=ZXQYCYKLSZ)](https://codecov.io/gh/StartupOS/pygments_tsx)
 
 ## What is this?
-This package includes lexers for JSX and TSX files for Pygment.
-Pull requests are requested, and the code is released under the MIT License. We make no warranties this thing works, just doing our best.
+This package includes lexers for JSX and TSX files for Pygment, as well as RSX, a language called "Toolscript" developed by retool that was syntactically close enough to add in.
+Pull requests are requested, and the code is released under the [Creative Commons Non-Commercial License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/). 
 
 ## To use
 Either:
