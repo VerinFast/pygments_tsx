@@ -16,9 +16,21 @@ class TypeScriptXLexer(TypeScriptLexer):
     tokens = TOKENS
 
 
+class ToolScriptLexer(TypeScriptLexer):
+    def __init__(self, **options) -> None:
+        super().__init__(**options)
+        self.tokens = TOKENS | super().tokens
+
+    name = 'ToolScript'
+    aliases = ['rsx', 'toolscript']
+    filenames = ['*.rsx']
+    tokens = TOKENS
+
+
 def patch_pygments():
     # Hack to register an internal lexer.
     _lexer_cache['TypeScriptXLexer'] = TypeScriptXLexer
+    _lexer_cache['ToolScriptLexer'] = ToolScriptLexer
     _lexer_cache['JsxLexer'] = JsxLexer
 
     LEXERS['TypeScriptXLexer'] = (
@@ -27,6 +39,14 @@ def patch_pygments():
         ('typescriptx', 'pygments_tsx'),
         ('*.tsx',),
         ('application/x-typescript', 'text/x-typescript')
+    )
+
+    LEXERS['ToolScriptLexer'] = (
+        '',
+        'ToolScriptLexer',
+        ('toolscript', 'rsx'),
+        ('*.rsx',),
+        ('application/x-toolscript', 'text/x-toolscript')
     )
 
     LEXERS['JsxLexers'] = (
