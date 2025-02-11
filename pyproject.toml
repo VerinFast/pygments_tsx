@@ -10,7 +10,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pygments_tsx"
-license = "MIT"
+license = "CC-BY-NC-ND-4.0"
 authors = [
   { name="Jason Nichols", email="github@startupos.dev" },
   { name="Sean Conrad", email="github@startupos.dev"}
@@ -21,9 +21,8 @@ requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: JavaScript",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Topic :: Software Development",
     "Topic :: Text Editors"
 ]
