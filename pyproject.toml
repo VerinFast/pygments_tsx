@@ -33,7 +33,7 @@ dynamic = ["version"]
 
 [project.optional-dependencies]
 dev = [
-    "pytest~=8.0",
+    "pytest>=8,<10",
     "pytest-cov~=4.1",
     "flake8~=7.0",
 ]
