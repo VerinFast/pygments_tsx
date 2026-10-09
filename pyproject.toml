@@ -9,7 +9,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pygments_tsx"
-license = "CC-BY-NC-ND-4.0"
+license = "Elastic-2.0"
+license-files = ["LICENSE"]
 authors = [
   { name="Jason Nichols", email="github@startupos.dev" },
   { name="Sean Conrad", email="github@startupos.dev"}
@@ -20,6 +21,7 @@ requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: JavaScript",
+    "License :: Other/Proprietary License",
     "Operating System :: OS Independent",
     "Development Status :: 5 - Production/Stable",
     "Topic :: Software Development",

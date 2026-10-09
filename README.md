@@ -2,7 +2,7 @@
 
 ## What is this?
 This package includes lexers for JSX and TSX files for Pygment, as well as RSX, a language called "Toolscript" developed by retool that was syntactically close enough to add in.
-Pull requests are requested, and the code is released under the [Creative Commons Non-Commercial License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/). 
+Pull requests are requested. The code is released under the [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license) — source-available: use it, copy it, modify it, but do not offer it to others as a hosted or managed service.
 
 ## To use
 Either:
